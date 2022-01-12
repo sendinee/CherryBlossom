@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+/* HEADER */
+header a {
+      text-decoration: none;
+}
+
+header {
+      padding: 0 20px;
+      background-color: #f6c3e3;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+}
+
+/* LOGO */
+.nav {
+      height: 35px;
+}
+
+#logo {
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+}
+
+#logo a {
+      color: #f163ba;
+}
+
+ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+
+ul a {
+      color: #ea0893;
+}
+
+ul li {
+      padding: 5px;
+      margin-left: 10px;
+}
+
+ul li:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+}
+/* LOGIN & SIGNUP */
+#connexion1, #connexion2,
+#inscription1, #inscription2 {
+      border-radius: 5px;
+      padding: 5px 8px;
+}
+
+#connexion1, #connexion2 {
+      border: 1px solid rgba(103, 32, 133, 0.87);
+}
+
+#inscription1, #inscription2 {
+      border: 1px solid rgba(241, 77, 109, 0.89);
+}
+
+#inscription1, #inscription2 a {
+      color: #ee3457;
+}
+
+#connexion1, #connexion2 a {
+      color: rgba(145, 68, 171, 0.89);
+}
+
+/* HAMBURGER */
+#hamburger-icon {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+}
+
+#hamburger-icon div {
+      width: 35px;
+      height: 3px;
+      background-color: #e140a6;
+      margin: 6px 0;
+      transition: 0.4s;
+}
+
+/* BAR 1 */
+.open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+/* BAR 2 */
+.open .bar2 {
+      opacity: 0;
+}
+
+/* BAR 3 */
+.open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* MOBILE MENU */
+.open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+}
+
+.mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px);
+      width: 100%;
+}
+
+.mobile-menu li {
+      margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+      header nav {
+            display: none;
+      }
+
+      #hamburger-icon {
+            display: block;
+      }
+}
+
+/* BODY */
+body {
+      margin:0;
+      padding:0;
+      overflow:hidden;
+      background-color:black;
+}
+
+section{
+      height:100%;
+      width:100%;
+      position:absolute ;  background:#f6c3e3;
+}
+
+/* FOND D'ECRAN : CHERRY BLOSSOM */
+.cherry{
+      position:absolute ;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+}
+
+.cherry div{
+      position:absolute ;
+      display:block ;
+}
+
+.cherry div:nth-child(1){
+      left:20%;
+      animation:fall 15s linear infinite ;
+      animation-delay:-2s;
+
+}
+
+.cherry div:nth-child(2){
+      left:70%;
+      animation:fall 15s linear infinite ;
+      animation-delay:-4s;
+}
+
+.cherry div:nth-child(3){
+      left:10%;
+      animation:fall 20s linear infinite ;
+      animation-delay:-7s;
+
+}
+
+.cherry div:nth-child(4){
+      left:50%;
+      animation:fall 18s linear infinite ;
+      animation-delay:-5s;
+}
+
+.cherry div:nth-child(5){
+      left:85%;
+      animation:fall 14s linear infinite ;
+      animation-delay:-5s;
+}
+
+.cherry div:nth-child(6){
+      left:15%;
+      animation:fall 16s linear infinite ;
+      animation-delay:-10s;
+}
+
+.cherry div:nth-child(7){
+      left:90%;
+      animation:fall 15s linear infinite ;
+      animation-delay:-4s;
+}
+
+@keyframes fall{
+      0%{
+            opacity:1;
+            top:-10%;
+            transform:translateX(20px) rotate(0deg);
+      }
+      20%{
+            opacity:0.8;
+            transform:translateX(-20px) rotate(45deg);
+      }
+      40%{
+
+            transform:translateX(-20px) rotate(90deg);
+      }
+      60%{
+
+            transform:translateX(-20px) rotate(135deg);
+      }
+      80%{
+
+            transform:translateX(-20px) rotate(180deg);
+      }
+      100%{
+
+            top:110%;
+            transform:translateX(-20px) rotate(225deg);
+      }
+}
+
+.cherry1{
+      transform: rotateX(180deg);
+}
+
+/* H2 */
+h2{
+      position:absolute ;
+      top:40%;
+      width:100%;
+      font-family: 'Courgette', cursive;
+      font-size:4em;
+      text-align:center;
+      transform: translateX(0%);
+      color:#f163ba;
+      transform:translateY(-50%);
+}
+
+
